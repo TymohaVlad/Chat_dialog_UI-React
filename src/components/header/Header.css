@@ -1,0 +1,10 @@
+header {
+  background-image: url(https://fastly.picsum.photos/id/311/320/200.jpg?blur=2&hmac=C4bwZWaREyFyu6iycxGQYAa5j7sxhWojEDELeGX7vA8);
+}
+.header__title{
+    padding: 22px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px, 2px, #000;
+    letter-spacing: 1px;
+}
