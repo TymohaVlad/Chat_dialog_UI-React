@@ -23,10 +23,18 @@ function Main() {
   const [messages, setMessages] = useState(INITIAl_MESSAGES);
 
   return (
-    <div className="main">
-      {messages.map(({ text, isCurrentUser }, i) => (
-        <Message key={i} text={text} isCurrentUser={isCurrentUser}/>
-      ))}
+    <div className="main__messages">
+      <div className="main">
+        {messages.map(({ text, isCurrentUser }, i) => (
+          <Message key={i} text={text} isCurrentUser={isCurrentUser} />
+        ))}
+      </div>
+      <div className='main__plate'>
+        <textarea/>
+      </div>
+      <div className='main__plate'>
+        <button>Send message</button>
+      </div>
     </div>
   );
 }
