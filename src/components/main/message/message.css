@@ -1,0 +1,30 @@
+.message{
+    display: flex;
+    padding: 11px;
+}
+.message__second{
+    background-color: var(--gray-dark);
+}
+.meaage__avatar{
+    width: 79px;
+    height: 79px;
+    flex-shrink: 0;
+    border: solid 3px #fff;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.message__image{
+    width: 100%;
+}
+.meaage__bobble{
+    margin: 0 10px 0 11px;
+    padding: 7px 6px 8px 8px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%;
+    font-size: 14px;
+    word-spacing: -1px
+}
+.message__second .meaage__bobble{
+    order: -1;
+}
