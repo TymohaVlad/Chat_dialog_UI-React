@@ -1,0 +1,4 @@
+.main__plate{
+    padding: 16px 22px;
+    border-top: solid 1px var(--gray-dark);
+}
