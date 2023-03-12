@@ -6,15 +6,15 @@ import './Main.css';
 
 export const INITIAl_MESSAGES = [
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     isCurrentUser: true,
   },
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     isCurrentUser: false,
   },
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     isCurrentUser: true,
   },
 ];
@@ -38,7 +38,7 @@ const onTextAreaChange = ({target: {value}}) => {
         <textarea className='main__textarea' onChange={onTextAreaChange} value={currentMessage}/>
       </div>
       <div className='main__plate'>
-        <button>Send message</button>
+        <button className='main__button'>Send message</button>
       </div>
     </div>
   );
