@@ -27,6 +27,13 @@ const onTextAreaChange = ({target: {value}}) => {
     setCurrentMessage(value)
 }
 
+const onButtonClick = () => {
+  if(currentMessage.trim()){
+    setMessages([...messages, {text:currentMessage, isCurrentUser: true}]);
+    setCurrentMessage('')
+  }
+}
+
   return (
     <div className="main__messages">
       <div className="main">
@@ -38,7 +45,7 @@ const onTextAreaChange = ({target: {value}}) => {
         <textarea className='main__textarea' onChange={onTextAreaChange} value={currentMessage}/>
       </div>
       <div className='main__plate'>
-        <button className='main__button'>Send message</button>
+        <button className='main__button' onClick={onButtonClick}>Send message</button>
       </div>
     </div>
   );
