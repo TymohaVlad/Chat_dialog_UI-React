@@ -26,11 +26,16 @@ function Main() {
 const onTextAreaChange = ({target: {value}}) => {
     setCurrentMessage(value)
 }
-
+const onMessageReply = () => {
+  setTimeout(() => {
+    setMessages(prevState => ([...prevState, {text: 'test text', isCurrentUser: false}]))
+  },1000)
+}
 const onButtonClick = () => {
   if(currentMessage.trim()){
     setMessages([...messages, {text:currentMessage, isCurrentUser: true}]);
     setCurrentMessage('')
+    onMessageReply()
   }
 }
 
